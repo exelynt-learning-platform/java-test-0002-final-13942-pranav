@@ -38,33 +38,7 @@ This creates a pyramid shape where the numbers mirror around the center.
 5. Use another loop to print numbers in **descending order** from `(row-1)` back to `1`.
 6. Move to the next line after each row.
 
-## Java Implementation
-
-```java
-public class Pattern {
-    public static void main(String[] args) {
-        int n = 5;
-
-        for (int i = 1; i <= n; i++) {
-
-            for (int j = i; j < n; j++) {
-                System.out.print("  ");
-            }
-
-            for (int j = 1; j <= i; j++) {
-                System.out.print(j + " ");
-            }
-
-            for (int j = i - 1; j >= 1; j--) {
-                System.out.print(j + " ");
-            }
-
-            System.out.println();
-        }
-    }
-}
-```
-
+## Java Implementation - in File Main.java
 ## Output
 
 ```
@@ -85,17 +59,17 @@ public class Pattern {
 
 ## How to Run
 
-1. Save the program as `Pattern.java`
+1. Save the program as `Main.java`
 2. Compile the program:
 
 ```
-javac Pattern.java
+javac Main.java
 ```
 
 3. Run the program:
 
 ```
-java Pattern
+java Main
 ```
 
 ## Author
